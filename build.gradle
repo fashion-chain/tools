@@ -44,12 +44,12 @@ sourceSets {
 dependencies {    
 	compile ("org.fc.zippo:org.fc.zippo.oapi:3.3.2")
 	compile ("com.cedarsoftware:java-util:1.8.0")
-	
+	compile 'joda-time:joda-time:2.9.9'
     includeInJar ("org.bouncycastle:bcprov-jdk15on:1.58")
 }
 
 jar {
 	manifest{
-		attributes( 'Import-Ignore':'')
+		attributes( 'Import-Ignore':'com.cedarsoftware,org.bouncycastle')
 	}
 }
