@@ -1,8 +1,6 @@
 package org.fok.tools.thread.exception;
 
-import javassist.NotFoundException;
-
-public class ThreadPoolNotExistsException extends NotFoundException {
+public class ThreadPoolNotExistsException extends Exception {
 	public ThreadPoolNotExistsException(String msg) {
 		super(msg);
 	}
